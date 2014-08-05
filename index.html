@@ -4,10 +4,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<meta id="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Vishal Jugdeo</title>
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"></link>
-	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.1/build/reset-fonts-grids/reset-fonts-grids.css"></link>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/bootstrap-responsive.css">
 	<style>
 body{ margin: 0; }
 body, body * { font-family: "Helvetica Neue", Helvetica, sans-serif; text-align: left; }
@@ -24,6 +24,8 @@ h4{ margin-top: 20px; }
 #navbarContainer.show{ top: 0; transition: top .2s; }
 .navbar .container{ padding-right: 0; padding-left: 15px; margin-right: 0; margin-left: auto; background: white; border-bottom: 1px solid #e0e3e6; }
 .navbar .nav li .dropdown-menu{ border-radius: 0; border: 0; box-shadow: none; }
+.navbar-nav>li.section-title { line-height: 20px; font-size: 15px; position: relative; display: block; padding: 10px 15px;}
+
 .navbar a:hover{ color: black;}
 .navbar .navbar-brand, .navbar li a { font-size: 15px; color: #223; }
 .navbar-brand{ margin-right: 65px; }
@@ -49,17 +51,23 @@ a:visited{ color: #57758F; }
 .section h3, .section h2{ margin-bottom: 15px; }
 .work{ padding-top: 100px; }
 .menu .items{ display: inline-block; vertical-align: top; }
-.images p{ margin: 55px 0 170px 0; }
+.images p{ margin: 55px 0 55px 0; }
 img.lazy, iframe.lazy{ height: 500px; display: block; }
-.work .caption{ font-size: 90%; color: #5F6D6B; float: left; margin-top: 13px; clear: both; }
+.work .caption{ font-size: 90%; color: #5F6D6B; display: block; margin-top: 13px; clear: both; }
 .icon-bar{ background: #223; }
 .piece{ font-weight: bold;}
 
 .image-wrapper{ background: white; padding: 20px 20px 20px 20px; margin-left: -20px; display: inline-block; background: rgba(255,255,255,0); transition: background .5s;  }
-.image-wrapper:hover{ background: rgba(255,255,255,1); box-shadow: 0 0 15px rgba(0,0,0,.1);}
-.image-wrapper .photo-controls{ opacity: 0; transition: opacity .5s; margin-top: 13px; text-align: right; }
+.image-wrapper .photo-controls{ opacity: 0; transition: opacity .5s; margin-top: 7px; text-align: center; }
 .image-wrapper .photo-controls a{ font-weight: bold; cursor: pointer;  }
+.image-wrapper .photo-controls a.prev{ float: left;  }
+.image-wrapper .photo-controls a.next{ float: right;  }
 .image-wrapper:hover .photo-controls{ opacity: 1; }
+
+.nav>li.menu-nodd{ visibility: hidden; display: none; }
+.nav .section-title{ font-weight: 600; }
+
+#press { margin: 150px 0 700px;  padding-top: 200px; }
 
 
 @media screen and (max-width: 1032px){
@@ -70,6 +78,10 @@ iframe.lazy{ width: 100%; height: 398px; }
 }
 
 @media screen and (max-width: 768px) {
+.navbar-collapse{ max-height: 100%; }
+#workDropdown{ visibility: hidden; display: none;}
+.work-link{ background: #eeeee1; }
+.nav>li.menu-nodd{ visibility: visible; display: block; }
 #navbarContainer{ top: 0; }
 .header{ visibility: hidden; display: none; }
 body{ font-size: 125%; }
@@ -77,7 +89,7 @@ body{ font-size: 125%; }
 .navbar .container{ padding: 0 4%;}
 .header{ padding-bottom: 80px; }
 .menu .items{ width: auto; }
-img.lazy{height: auto; width: 100%; }
+img.lazy{height: auto; width: auto; max-width: 100%;  }
 iframe.lazy{ width: 100%; height: 398px; }
 .links a{ margin-bottom: 6px; }
 .section{ margin-top: 0; }
@@ -87,6 +99,7 @@ iframe.lazy{ width: 100%; height: 398px; }
 .image-wrapper,.image-wrapper:hover{ background: none; padding: 0; margin-left: 0; display: block; box-shadow: none; margin-bottom: 30px; }
 .image-wrapper .photo-controls{display: none;}
 #workDropdown, #workDropdown.active, #workDropdown:hover, #workDropdown ul{ max-width: 100%; min-width: 100%;}
+#press { padding-top: 65px; }
 }
 
 </style>
@@ -107,8 +120,19 @@ iframe.lazy{ width: 100%; height: 398px; }
       </div>
       <div class="collapse navbar-collapse" id="workMenu">
         <ul class="nav navbar-nav">
-          <li><a href="cv.html">CV</a></li>
-          <li><a href="#press">Press</a></li>
+          <li><a data-toggle="collapse" data-target=".navbar-collapse" href="cv.html">CV</a></li>
+          <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#press">Press</a></li>
+          <li class="menu-nodd work-link section-title">Work</li>
+          <li class="menu-nodd work-link"><a data-toggle="collapse" data-target=".navbar-collapse" href="#a-shaky-picture-has-no-weight">A Shaky Picture Has No Weight (2013)</a></li>
+          <li class="menu-nodd work-link"><a data-toggle="collapse" data-target=".navbar-collapse" href="#a-weight-dangles-above-your-head">A Weight Dangles Above Your Head / A Shaky Picture Has No Weight (2014)</a></li>
+          <li class="menu-nodd work-link"><a data-toggle="collapse" data-target=".navbar-collapse" href="#the-thing-that-precedes-you">The Thing That Precedes The You (2013)</a></li>
+          <li class="menu-nodd work-link"><a data-toggle="collapse" data-target=".navbar-collapse" href="#goods-carrier">Goods Carrier (2012)</a></li>
+          <li class="menu-nodd work-link"><a data-toggle="collapse" data-target=".navbar-collapse" href="#stage-design-for-disassociation">Stage Design for Disassociation (2011)</a></li>
+          <li class="menu-nodd work-link"><a data-toggle="collapse" data-target=".navbar-collapse" href="#thought-composition-with-model-of-the-world">Thought Composition with Model of the World (2010)</a></li>
+          <li class="menu-nodd work-link"><a data-toggle="collapse" data-target=".navbar-collapse" href="#violent-broadcast">Violent Broadcast (2010)</a></li>
+          <li class="menu-nodd work-link"><a data-toggle="collapse" data-target=".navbar-collapse" href="#square-configuration">Square Configuration (Decorum) Study (2009)</a></li>
+          <li class="menu-nodd work-link"><a data-toggle="collapse" data-target=".navbar-collapse" href="#surplus-room">Surplus Room (2008)</a></li>
+          <li class="menu-nodd work-link"><a data-toggle="collapse" data-target=".navbar-collapse" href="#other-work">Other work</a></li>
           <li class="dropdown" id="workDropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <span class="menu-button">Work&nbsp;&nbsp;<span class="piece"> </span></span>
@@ -443,7 +467,10 @@ iframe.lazy{ width: 100%; height: 398px; }
 				<p>Camera: Aram Moshayedi and Vishal Jugdeo</p>
 				<div class="images">
 					<p><img src="about:blank" class="lazy" data-src="asset/img/500/object_and_event.jpg"/></p>
-					<p><iframe class="lazy" id="video11" src="about:blank" data-src="http://player.vimeo.com/video/54316989?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="674" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe class="lazy"></p>
+					<p>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="lazy" id="video11" src="about:blank" data-src="http://player.vimeo.com/video/54316989?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="674" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe class="lazy"></p>
+            </div>
 				</div>
 			</div>
 
@@ -524,7 +551,7 @@ iframe.lazy{ width: 100%; height: 398px; }
 	</div>
 	
 	<div class="footer">
-	<a id="press"></a>
+	<div id="press">
 	<h2>Selected Press</h2>
 	<div class="section menu">
 		<div class="items">
@@ -542,6 +569,7 @@ iframe.lazy{ width: 100%; height: 398px; }
 			</p>
 		</div>
 	</div>
+  </div>
 	</div>
 
 
@@ -657,7 +685,7 @@ iframe.lazy{ width: 100%; height: 398px; }
         if(j > 0){
           controls += "<a class='prev'>Previous</a> ";
         }
-        controls += ((j + 1) + " of " + media.length);
+        controls += "<span class='img-index'>" + ((j + 1) + " of " + media.length) + "</span>";
         if(j < (media.length - 1)){
           controls += " <a class='next'>Next</a></div>";
         }
