@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Vishal Jugdeo</title>
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/bootstrap-responsive.css">
 	<style>
 body{ margin: 0; }
 body, body * { font-family: "Helvetica Neue", Helvetica, sans-serif; text-align: left; }
@@ -18,7 +17,7 @@ p{margin: 8px 0; }
 h1{ font-size: 16px;}
 h2{ font-size: 119%; }
 h3{ font-size: 130%; }
-h4{ margin-top: 20px; }
+h4{ margin-top: 20px; font-size: 115%; }
 
 #navbarContainer{ top: -51px; transition: top .2s; }
 #navbarContainer.show{ top: 0; transition: top .2s; }
@@ -50,6 +49,7 @@ a:visited{ color: #57758F; }
 .links a{ margin-right: 4px; display: block; }
 .section h3, .section h2{ margin-bottom: 15px; }
 .work{ padding-top: 100px; }
+.work h3, .work p{max-width: 600px;}
 .menu .items{ display: inline-block; vertical-align: top; }
 .images p{ margin: 55px 0 55px 0; }
 img.lazy, iframe.lazy{ height: 500px; display: block; }
@@ -78,7 +78,7 @@ iframe.lazy{ width: 100%; height: 398px; }
 }
 
 @media screen and (max-width: 768px) {
-.navbar-collapse{ max-height: 100%; }
+.navbar-fixed-top .navbar-collapse,.navbar-collapse{ max-height: 2000px; overflow-y: scroll;}
 #workDropdown{ visibility: hidden; display: none;}
 .work-link{ background: #eeeee1; }
 .nav>li.menu-nodd{ visibility: visible; display: block; }
@@ -124,7 +124,6 @@ iframe.lazy{ width: 100%; height: 398px; }
           <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#press">Press</a></li>
           <li class="menu-nodd work-link section-title">Work</li>
           <li class="menu-nodd work-link"><a data-toggle="collapse" data-target=".navbar-collapse" href="#a-shaky-picture-has-no-weight">A Shaky Picture Has No Weight (2013)</a></li>
-          <li class="menu-nodd work-link"><a data-toggle="collapse" data-target=".navbar-collapse" href="#a-weight-dangles-above-your-head">A Weight Dangles Above Your Head / A Shaky Picture Has No Weight (2014)</a></li>
           <li class="menu-nodd work-link"><a data-toggle="collapse" data-target=".navbar-collapse" href="#the-thing-that-precedes-you">The Thing That Precedes The You (2013)</a></li>
           <li class="menu-nodd work-link"><a data-toggle="collapse" data-target=".navbar-collapse" href="#goods-carrier">Goods Carrier (2012)</a></li>
           <li class="menu-nodd work-link"><a data-toggle="collapse" data-target=".navbar-collapse" href="#stage-design-for-disassociation">Stage Design for Disassociation (2011)</a></li>
@@ -139,7 +138,6 @@ iframe.lazy{ width: 100%; height: 398px; }
               &nbsp;<b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li><a href="#a-shaky-picture-has-no-weight">A Shaky Picture Has No Weight (2013)</a></li>
-              <li><a href="#a-weight-dangles-above-your-head">A Weight Dangles Above Your Head / A Shaky Picture Has No Weight (2014)</a></li>
               <li><a href="#the-thing-that-precedes-you">The Thing That Precedes The You (2013)</a></li>
               <li><a href="#goods-carrier">Goods Carrier (2012)</a></li>
               <li><a href="#stage-design-for-disassociation">Stage Design for Disassociation (2011)</a></li>
@@ -172,7 +170,6 @@ iframe.lazy{ width: 100%; height: 398px; }
 					<h2>Work</h2>
 					<p class="links">
             <a href="#a-shaky-picture-has-no-weight">A Shaky Picture Has No Weight (2013)</a>
-            <a href="#a-weight-dangles-above-your-head">A Weight Dangles Above Your Head / A Shaky Picture Has No Weight (2014)</a>
             <a href="#the-thing-that-precedes-you">The Thing That Precedes The You (2013)</a>
 						<a href="#goods-carrier">Goods Carrier (2012)</a>
 						<a href="#stage-design-for-disassociation">Stage Design for Disassociation (2011)</a>
@@ -208,50 +205,16 @@ iframe.lazy{ width: 100%; height: 398px; }
         <p>Crew in Los Angeles: director of photography: Conci Althouse, sound mix: Noah Liebelt, production assistant: Eric Sick. Script, direction and editing: Vishal Jugdeo. Camera in Guyana: Vishal Jugdeo.</p>
 				<div class="images">
 					<p>
-            <img src="about:blank" class="lazy" data-src="asset/img/500/a-shaky-picture-1.jpg"/>
+            <img src="about:blank" class="lazy" data-src="asset/img/500/a-shaky-picture-2.jpg"/>
 					</p>
 					<p>
-            <img src="about:blank" class="lazy" data-src="asset/img/500/a-shaky-picture-2.jpg"/>
+            <img src="about:blank" class="lazy" data-src="asset/img/500/a-shaky-picture-1.jpg"/>
 					</p>
 					<p>
             <img src="about:blank" class="lazy" data-src="asset/img/500/a-shaky-picture-3.jpg"/>
 					</p>
 					<p>
-            <img src="about:blank" class="lazy" data-src="asset/img/500/a-shaky-picture-4.jpg"/>
-					</p>
-					<p>
             <img src="about:blank" class="lazy" data-src="asset/img/500/a-shaky-picture-5.jpg"/>
-					</p>
-				</div>
-      </div>
-
-      <div id='a-weight-dangles-above-your-head' class='section work'>
-        <h3>A Weight Dangles Above Your Head / A Shaky Picture Has No Weight (2014)</h3>
-        <p>Mixed-media installation with HD video projection and three-channel soundtrack. Total running time: 23:24</p>
-				<div class="images">
-					<p>
-            <img src="about:blank" class="lazy" data-src="asset/img/500/a-shaky-picture-a-weight-1.jpg"/>
-					</p>
-					<p>
-            <img src="about:blank" class="lazy" data-src="asset/img/500/a-shaky-picture-a-weight-2.jpg"/>
-					</p>
-					<p>
-            <img src="about:blank" class="lazy" data-src="asset/img/500/a-shaky-picture-a-weight-3.jpg"/>
-					</p>
-					<p>
-            <img src="about:blank" class="lazy" data-src="asset/img/500/a-shaky-picture-a-weight-4.jpg"/>
-					</p>
-					<p>
-            <img src="about:blank" class="lazy" data-src="asset/img/500/a-shaky-picture-a-weight-5.jpg"/>
-					</p>
-					<p>
-            <img src="about:blank" class="lazy" data-src="asset/img/500/a-shaky-picture-a-weight-6.jpg"/>
-					</p>
-					<p>
-            <img src="about:blank" class="lazy" data-src="asset/img/500/a-shaky-picture-a-weight-7.jpg"/>
-					</p>
-					<p>
-            <img src="about:blank" class="lazy" data-src="asset/img/500/a-shaky-picture-a-weight-8.jpg"/>
 					</p>
 				</div>
       </div>
@@ -268,33 +231,19 @@ iframe.lazy{ width: 100%; height: 398px; }
         <p>Production assistants: Makena Hudson, Martin Lammert</p>
 				<div class="images">
 					<p>
-            <img src="about:blank" class="lazy" data-src="asset/img/500/the-thing-that-precedes-you-1.jpg"/>
-					</p>
-					<p>
-            <img src="about:blank" class="lazy" data-src="asset/img/500/the-thing-that-precedes-you-2.jpg"/>
+            <img src="about:blank" class="lazy" data-src="asset/img/500/the-thing-that-precedes-you-5.jpg"/>
 					</p>
 					<p>
             <img src="about:blank" class="lazy" data-src="asset/img/500/the-thing-that-precedes-you-3.jpg"/>
 					</p>
 					<p>
-            <img src="about:blank" class="lazy" data-src="asset/img/500/the-thing-that-precedes-you-4.jpg"/>
-					</p>
-					<p>
-            <img src="about:blank" class="lazy" data-src="asset/img/500/the-thing-that-precedes-you-5.jpg"/>
-					</p>
-					<p>
-            <img src="about:blank" class="lazy" data-src="asset/img/500/the-thing-that-precedes-you-6.jpg"/>
-					</p>
-					<p>
             <img src="about:blank" class="lazy" data-src="asset/img/500/the-thing-that-precedes-you-7.jpg"/>
 					</p>
 					<p>
-            <img src="about:blank" class="lazy" data-src="asset/img/500/the-thing-that-precedes-you-8.jpg"/>
+            <img src="about:blank" class="lazy" data-src="asset/img/500/the-thing-that-precedes-you-2.jpg"/>
 					</p>
           <p>
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="lazy" id="video03" src="about:blank" data-src="http://player.vimeo.com/video/69436820?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="889" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-            </div>
+            <iframe class="lazy" id="video03" src="about:blank" data-src="http://player.vimeo.com/video/69436820?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="889" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
           </p>
 				</div>
       </div>
@@ -321,9 +270,6 @@ iframe.lazy{ width: 100%; height: 398px; }
 						<span class="caption">Photo by Brian Forrest</span>
 					</p>
 					<p>
-						<img src="about:blank" class="lazy" data-src="asset/img/500/goods-carrier-5.jpg"/>
-					</p>
-					<p>
 						<img src="about:blank" class="lazy" data-src="asset/img/500/goods-carrier-6.jpg"/>
 					</p>
 					<p>
@@ -333,14 +279,10 @@ iframe.lazy{ width: 100%; height: 398px; }
 						<img src="about:blank" class="lazy" data-src="asset/img/500/goods-carrier-8.jpg"/>
 					</p>       
 					<p>
-					  <div class="embed-responsive embed-responsive-16by9">
-					    <iframe class="lazy" id="video01" src="about:blank" data-src="http://player.vimeo.com/video/50499467?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="889" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-					  </div>
+            <iframe class="lazy" id="video01" src="about:blank" data-src="http://player.vimeo.com/video/50499467?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="889" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 					</p>
 					<p>
-					  <div class="embed-responsive embed-responsive-16by9">
-					    <iframe class="lazy" id="video02" src="about:blank" data-src="http://player.vimeo.com/video/54631909?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="889" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-					  </div>
+            <iframe class="lazy" id="video02" src="about:blank" data-src="http://player.vimeo.com/video/54631909?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="889" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 					</p>
 
 				</div>
@@ -357,9 +299,7 @@ iframe.lazy{ width: 100%; height: 398px; }
 					<p><img src="about:blank" class="lazy" data-src="asset/img/500/stage-design-for-disassociation-3.jpg"/></p>
 					<p><img src="about:blank" class="lazy" data-src="asset/img/500/stage-design-for-disassociation-4.jpg"/></p>
 					<p>
-					  <div class="embed-responsive embed-responsive-16by9">
-					    <iframe class="lazy" id="video03" src="about:blank" data-src="http://player.vimeo.com/video/54417722?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="889" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-					  </div>
+            <iframe class="lazy" id="video03" src="about:blank" data-src="http://player.vimeo.com/video/54417722?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="889" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 					</p>
 				</div>
 			</div>
@@ -376,9 +316,7 @@ iframe.lazy{ width: 100%; height: 398px; }
 					<p><img src="about:blank" class="lazy" data-src="asset/img/500/violent-broadcast-4.jpg"/></p>
 					<p><img src="about:blank" class="lazy" data-src="asset/img/500/violent-broadcast-5.jpg"/></p>
 					<p>
-					  <div class="embed-responsive embed-responsive-16by9">
-					    <iframe class="lazy" id="video04" src="about:blank" data-src="http://player.vimeo.com/video/50639939?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="889" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-					  </div>
+            <iframe class="lazy" id="video04" src="about:blank" data-src="http://player.vimeo.com/video/50639939?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="889" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 					</p>
 				</div>
 			</div>
@@ -396,9 +334,7 @@ iframe.lazy{ width: 100%; height: 398px; }
 					<p><img src="about:blank" class="lazy" data-src="asset/img/500/thought-composition-5.jpg"/></p>
 					<p><img src="about:blank" class="lazy" data-src="asset/img/500/thought-composition-6.jpg"/></p>
 					<p>
-					  <div class="embed-responsive embed-responsive-16by9">
-					    <iframe class="lazy" id="video05" src="about:blank" data-src="http://player.vimeo.com/video/54475201?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="889" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-					  </div>
+            <iframe class="lazy" id="video05" src="about:blank" data-src="http://player.vimeo.com/video/54475201?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="889" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 					</p>
 
 				</div>
@@ -415,9 +351,7 @@ iframe.lazy{ width: 100%; height: 398px; }
 					<p><img src="about:blank" class="lazy" data-src="asset/img/500/square-configuration-2.jpg"/></p>
 					<p><img src="about:blank" class="lazy" data-src="asset/img/500/square-configuration-3.jpg"/></p>
 					<p>
-					  <div class="embed-responsive embed-responsive-16by9">
-					    <iframe class="lazy" id="video06" src="about:blank" data-src="http://player.vimeo.com/video/54425056?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="889" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-					  </div>
+            <iframe class="lazy" id="video06" src="about:blank" data-src="http://player.vimeo.com/video/54425056?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="889" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 					</p>
 
 				</div>
@@ -436,9 +370,7 @@ iframe.lazy{ width: 100%; height: 398px; }
 					<p><img src="about:blank" class="lazy" data-src="asset/img/500/surplus-room-4.jpg"/></p>
 					<p><img src="about:blank" class="lazy" data-src="asset/img/500/surplus-room-5.jpg"/></p>
 					<p>
-					  <div class="embed-responsive embed-responsive-16by9">
-					    <iframe class="lazy" id="video07" src="about:blank" data-src="http://player.vimeo.com/video/53827331?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="889" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-					  </div>
+            <iframe class="lazy" id="video07" src="about:blank" data-src="http://player.vimeo.com/video/53827331?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="889" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 					</p>
 
 				</div>
@@ -453,9 +385,7 @@ iframe.lazy{ width: 100%; height: 398px; }
 					<p><img src="about:blank" class="lazy" data-src="asset/img/500/sleepy_talk_1.jpg"/></p>
 					<p><img src="about:blank" class="lazy" data-src="asset/img/500/sleepy_talk_2.jpg"/></p>
 					<p>
-					  <div class="embed-responsive embed-responsive-16by9">
-					    <iframe class="lazy" id="video08" src="about:blank" data-src="http://player.vimeo.com/video/54580261?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="674" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-					  </div>
+            <iframe class="lazy" id="video08" src="about:blank" data-src="http://player.vimeo.com/video/54580261?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="674" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 					</p>
 
 				</div>
@@ -470,9 +400,7 @@ iframe.lazy{ width: 100%; height: 398px; }
 					<p><img src="about:blank" class="lazy" data-src="asset/img/500/model_in_the_studio_2.jpg"/></p>
 					<p><img src="about:blank" class="lazy" data-src="asset/img/500/model_in_the_studio_3.jpg"/></p>
 					<p>
-					  <div class="embed-responsive embed-responsive-16by9">
-					    <iframe class="lazy" id="video09" src="about:blank" data-src="http://player.vimeo.com/video/54580262?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="889" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-					  </div>
+            <iframe class="lazy" id="video09" src="about:blank" data-src="http://player.vimeo.com/video/54580262?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="889" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 					</p>
 
 				</div>
@@ -485,9 +413,7 @@ iframe.lazy{ width: 100%; height: 398px; }
 				<div class="images">
 					<p><img src="about:blank" class="lazy" data-src="asset/img/500/three_approximations.jpg"/></p>
 					<p>
-					  <div class="embed-responsive embed-responsive-16by9">
-					    <iframe class="lazy" id="video10" src="about:blank" data-src="http://player.vimeo.com/video/54571989?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="674" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-					  </div>
+            <iframe class="lazy" id="video10" src="about:blank" data-src="http://player.vimeo.com/video/54571989?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="674" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 					</p>
 
 				</div>
@@ -512,9 +438,7 @@ iframe.lazy{ width: 100%; height: 398px; }
 				<div class="images">
 					<p><img src="about:blank" class="lazy" data-src="asset/img/500/object_and_event.jpg"/></p>
 					<p>
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="lazy" id="video11" src="about:blank" data-src="http://player.vimeo.com/video/54316989?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="674" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></p>
-            </div>
+            <iframe class="lazy" id="video11" src="about:blank" data-src="http://player.vimeo.com/video/54316989?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="674" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></p>
 				</div>
 			</div>
 
@@ -525,9 +449,7 @@ iframe.lazy{ width: 100%; height: 398px; }
 				<div class="images">
 					<p><img src="about:blank" class="lazy" data-src="asset/img/500/an_unfinished_job.jpg"/></p>
 					<p>
-					  <div class="embed-responsive embed-responsive-16by9">
-					    <iframe class="lazy" id="video12" src="about:blank" data-src="http://player.vimeo.com/video/54576362?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="674" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-					  </div>
+            <iframe class="lazy" id="video12" src="about:blank" data-src="http://player.vimeo.com/video/54576362?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="674" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 					</p>
 				</div>
 			</div>
@@ -651,7 +573,7 @@ iframe.lazy{ width: 100%; height: 398px; }
 	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	  })();
 	</script>
-  <script src="/static/js/lib/jquery-2.0.3.js"></script>	
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>	
 	<script>
   
