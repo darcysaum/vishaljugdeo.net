@@ -29,7 +29,7 @@ h4{ margin-top: 20px; font-size: 115%; }
 .navbar .navbar-brand, .navbar li a { font-size: 15px; color: #223; }
 .navbar-brand{ margin-right: 65px; }
 
-#workDropdown, #workDropdown.active, #workDropdown:hover, #workDropdown ul{ background: #eeeee1; max-width: 631px; min-width: 631px;}
+#workDropdown, #workDropdown.active, #workDropdown:hover, #workDropdown ul{ background: #eeeee1; max-width: 470px; min-width: 470px;}
 #workDropdown li a{ background: #eeeee1; padding: 8px 15px; white-space: normal}
 #workDropdown li a:hover{ background: white; }
 
@@ -49,10 +49,11 @@ a:visited{ color: #57758F; }
 .links a{ margin-right: 4px; display: block; }
 .section h3, .section h2{ margin-bottom: 15px; }
 .work{ padding-top: 100px; }
-.work h3, .work p{max-width: 600px;}
+.work h3, .work > p{max-width: 600px;}
 .menu .items{ display: inline-block; vertical-align: top; }
 .images p{ margin: 55px 0 55px 0; }
-img.lazy, iframe.lazy{ height: 500px; display: block; }
+.images img, .images iframe{ height: 500px; display: block; opacity: 1.0; transition: opacity 0.1s;}
+.images img.lazy{ opacity: 0; transition: opacity 0.5s; }
 .work .caption{ font-size: 90%; color: #5F6D6B; display: block; margin-top: 13px; clear: both; }
 .icon-bar{ background: #223; }
 .piece{ font-weight: bold;}
@@ -72,8 +73,8 @@ img.lazy, iframe.lazy{ height: 500px; display: block; }
 
 @media screen and (max-width: 1032px){
 #workDropdown, #workDropdown.active, #workDropdown:hover, #workDropdown ul{ max-width: 369px; min-width: 369px;}
-img.lazy{height: auto; width: 100%; }
-iframe.lazy{ width: 100%; height: 398px; }
+.images img, .images iframe{height: auto; width: 100%; }
+.images iframe{ width: 100%; height: 398px; }
 .image-wrapper{width: 100%;}
 }
 
@@ -89,8 +90,8 @@ body{ font-size: 125%; }
 .navbar .container{ padding: 0 4%;}
 .header{ padding-bottom: 80px; }
 .menu .items{ width: auto; }
-img.lazy{height: auto; width: auto; max-width: 100%;  }
-iframe.lazy{ width: 100%; height: 398px; }
+.images img{height: auto; width: auto; max-width: 100%;  }
+.images iframe{ width: 100%; height: 300px; }
 .links a{ margin-bottom: 6px; }
 .section{ margin-top: 0; }
 .work{ padding-top: 65px; }
@@ -105,7 +106,7 @@ iframe.lazy{ width: 100%; height: 398px; }
 </style>
 </head>
 
-<body>
+<body data-spy='scroll'>
 
   <div id="navbarContainer" class="navbar navbar-fixed-top" role="navigation">
     <div class="container">
@@ -181,9 +182,6 @@ iframe.lazy{ width: 100%; height: 398px; }
             <a href="#thought-composition-with-model-of-the-world">Thought Composition with Model of the World (2010)</a>
             <a href="#other-work">Other projects</a>
 					</p>
-					<p class="links">
-						<a href="#other-work">Other projects</a>
-					</p>
 				</div>
 			</div>
 
@@ -197,21 +195,22 @@ iframe.lazy{ width: 100%; height: 398px; }
 
       <div id='a-shaky-picture-has-no-weight' class='section work'>
         <h3>A Shaky Picture Has No Weight (2013)</h3>
-        <p>Live performance including mixed-media installation with moving elements, HD video projection and sound.</p>
-        <p>Commissioned by Performa 13 and performed at Abrons Art Center, New York</p>
-        <p>Total running time: 40 minutes.</p>
+        <p>Live installation with HD video projection, performance and kinetic sculptural elements.  Total running time: 26 minutes.</p>
+        <p>Commissioned by Performa 13 and staged at Abrons Art Center, New York</p>
         <p>Performers: Vishal Jugdeo and Billy Wright</p>
-        <p>Technical direction and lighting design: Kryssy Wright</p>
-        <p>Theater tecnicians: Chimmy Gunn, Dan Cruz, Ben Demarest, McKenzie Angelo, Yolanda Royster</p>
-        <p>Production coordinator:&nbsp;Robert Hickerson</p>
-        <p>Abrons technical director:&nbsp;Jon Harper</p>
-        <p>Crew in Los Angeles: director of photography: Conci Althouse, sound mix: Noah Liebelt, production assistant: Eric Sick. Script, direction and editing: Vishal Jugdeo. Camera in Guyana: Vishal Jugdeo.</p>
+        <p>Theater technicians: Kryssy Wright, Chimmy Gunn, Dan Cruz, Ben Demarest, McKenzie Angelo, Yolanda Royster</p>
+        <p>Production coordinator: Robert Hickerson</p>
+        <p>Abrons technical director: Jon Harper</p>
+        <p>Video: Camera: Conci Althouse and Vishal Jugdeo, Sound: Noah Liebelt and Vishal Jugdeo.</p>
+
 				<div class="images">
 					<p>
             <img src="about:blank" class="lazy" data-src="asset/img/500/a-shaky-picture-1.jpg"/>
+            <span class="caption">Photo by Paula Court</span>
 					</p>
 					<p>
             <img src="about:blank" class="lazy" data-src="asset/img/500/a-shaky-picture-2.jpg"/>
+            <span class="caption">Photo by Paula Court</span>
 					</p>
 					<p>
             <img src="about:blank" class="lazy" data-src="asset/img/500/a-shaky-picture-3.jpg"/>
@@ -221,12 +220,15 @@ iframe.lazy{ width: 100%; height: 398px; }
 					</p>
 					<p>
             <img src="about:blank" class="lazy" data-src="asset/img/500/a-shaky-picture-5.jpg"/>
+            <span class="caption">Photo by Paula Court</span>
 					</p>
 					<p>
             <img src="about:blank" class="lazy" data-src="asset/img/500/a-shaky-picture-6.jpg"/>
+            <span class="caption">Photo by Paula Court</span>
 					</p>
 					<p>
             <img src="about:blank" class="lazy" data-src="asset/img/500/a-shaky-picture-7.jpg"/>
+            <span class="caption">Photo by Paula Court</span>
 					</p>
 					<p>
             <iframe class="lazy" id="video01" src="about:blank" data-src="http://player.vimeo.com/video/102005818?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="889" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
@@ -279,6 +281,7 @@ iframe.lazy{ width: 100%; height: 398px; }
 				<p>Mixed-media installation with HD video on flat-screen monitor and four-channel sound, dimensions variable.</p>
 				<p>TRT 13:00</p>
 				<p>Performers: Cynthia Bond and Patricia Scanlon</p>
+        <p>Camera: Danny Roew</p>
 				<div class="images">
 					<p><img src="about:blank" class="lazy" data-src="asset/img/500/stage-design-for-disassociation-1.jpg"/></p>
 					<p><img src="about:blank" class="lazy" data-src="asset/img/500/stage-design-for-disassociation-2.jpg"/></p>
@@ -293,6 +296,9 @@ iframe.lazy{ width: 100%; height: 398px; }
 
 			<div id="an-education-in-the-logic-of-leaves" class="section work">
 				<h3>An Education In the Logic of the Leaves (2014)</h3>
+        <p>Mixed-media installation with two HD videos, sound.  Total running time for all: 21 minutes</p>
+        <p>Performers: Vishal Jugdeo and Shyaam Kaara</p>
+        <p>Director of photography: Conci Althouse, Assistant Camera: Carole McClintock, Sound mix: Noah Liebelt</p>
 				<div class="images">
 					<p><img src="about:blank" class="lazy" data-src="asset/img/500/an-education-1.jpg"/></p>
 					<p><img src="about:blank" class="lazy" data-src="asset/img/500/an-education-2.jpg"/></p>
@@ -312,6 +318,7 @@ iframe.lazy{ width: 100%; height: 398px; }
 				<p>Single-channel high-definition video projection onto custom screen with sound</p>
 				<p>TRT: 8:00</p>
 				<p>Performers: Cynthia Bond, Mark Damon Espinoza, and Billy Wright</p>
+        <p>Camera, sound and lighting: AJ Wedding</p>
 				<div class="images">
 					<p><img src="about:blank" class="lazy" data-src="asset/img/500/violent-broadcast-1.jpg"/><span class="caption">Photo by Kelly Barrie</span></p>
 					<p><img src="about:blank" class="lazy" data-src="asset/img/500/violent-broadcast-2.jpg"/></p>
@@ -332,6 +339,7 @@ iframe.lazy{ width: 100%; height: 398px; }
 				<p>TRT: 7:40</p>
 				<p>(May be exhibited as single-channel projection)</p>
 				<p>Performers: Cynthia Bond and Billy Wright</p>
+        <p>Camera, sound and lighting: AJ Wedding</p>
 				<div class="images">
 					<p><img src="about:blank" class="lazy" data-src="asset/img/500/square-configuration-1.jpg"/></p>
 					<p><img src="about:blank" class="lazy" data-src="asset/img/500/square-configuration-2.jpg"/></p>
@@ -349,6 +357,7 @@ iframe.lazy{ width: 100%; height: 398px; }
 				<p>Dimensions variable</p>
 				<p>TRT: 8:00 </p>
 				<p>Performers: Joe Reynolds and Billy Wright</p>
+        <p>Camera, sound and lighting: AJ Wedding</p>
 				<div class="images">
 					<p><img src="about:blank" class="lazy" data-src="asset/img/500/surplus-room-1.jpg"/><span class="caption">Photo by Kelly Barrie</span></p>
 					<p><img src="about:blank" class="lazy" data-src="asset/img/500/surplus-room-2.jpg"/><span class="caption">Photo by Kelly Barrie</span></p>
@@ -366,15 +375,11 @@ iframe.lazy{ width: 100%; height: 398px; }
       
       <div id='the-thing-that-precedes-you' class='section work'>
         <h3>The Thing That Precedes The You (2013)</h3>
-        <p>Mixed-media installation with kinetic elements, HD video on monitor, sound on headphones and additional soundtrack within installation.  Dimensions variable. Total running time: 12:51</p>
+        <p>Mixed-media installation with kinetic elements, HD video on monitor, sound on headphones and additional soundtrack within installation. Dimensions variable. Total running time: 12:51</p>
         <p>Performers: Shyaam Karra and Michael Karan Tomsu</p>
-        <p>Written directed and edited by Vishal Jugdeo</p>
-        <p>Director of photography: Michelle Lawler</p>
-        <p>Sound mix: Adam Douglass</p>
-        <p>Assistant camera: Carole McClintock</p>
-        <p>Assistant production coordinator: Eric Sick</p>
-        <p>Production assistants: Makena Hudson, Martin Lammert</p>
-				<div class="images">
+        <p>Director of photography: Michelle Lawler, Sound: Adam Douglass, Assistant Camera: Carole McClintock.  Production coordination: Eric Sick</p>
+        
+        <div class="images">
 					<p>
             <img src="about:blank" class="lazy" data-src="asset/img/500/the-thing-that-precedes-the-you-1.jpg"/>
 					</p>
@@ -402,6 +407,7 @@ iframe.lazy{ width: 100%; height: 398px; }
 				<p>Mixed-media sculpture with high-definition video on flat-screen monitor with four-channel sound, dimensions variable</p>
 				<p>TRT: 8:35</p>
 				<p>Performers: Vishal Jugdeo and Billy Wright</p>
+        <p>Camera, sound and lighting: AJ Wedding</p>
 				<div class="images">
 					<p><img src="about:blank" class="lazy" data-src="asset/img/500/thought-composition-1.jpg"/><span class="caption">Photo by Joshua White</span></p>
 					<p><img src="about:blank" class="lazy" data-src="asset/img/500/thought-composition-2.jpg"/><span class="caption">Photo by Joshua White</span></p>
@@ -427,7 +433,6 @@ iframe.lazy{ width: 100%; height: 398px; }
 					<p>
             <iframe class="lazy" id="video08" src="about:blank" data-src="http://player.vimeo.com/video/54580261?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="674" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 					</p>
-
 				</div>
 			</div>
 
@@ -630,9 +635,9 @@ iframe.lazy{ width: 100%; height: 398px; }
 		}
 
 		return (
-			top < (window.pageYOffset + window.innerHeight) &&
+			top < (window.pageYOffset + window.innerHeight + 500) &&
 			left < (window.pageXOffset + window.innerWidth) &&
-			(top + height) > window.pageYOffset &&
+			(top + height + 500) > window.pageYOffset &&
 			(left + width) > window.pageXOffset
 		);
 	}
@@ -654,12 +659,15 @@ iframe.lazy{ width: 100%; height: 398px; }
     };
 
     var lazyLoad = function(event){
-      var start = (new Date()).getTime();
 			for(var i = 0; i < lazyLoadElements.length; i++){
 				var el = lazyLoadElements[i];
+        el.addEventListener("load", function(event){
+          var tmp = event.target.className.replace('lazy', '');
+          event.target.className = tmp;
+        });
 				if(elementInViewport(el) && !el.vis){
 					el.vis = true;
-					el.setAttribute("src", el.getAttribute("data-src"));
+          el.setAttribute("src", el.getAttribute("data-src"));
 				}
         if(window.pageYOffset > 600){
           menu.addClass('show');
@@ -684,11 +692,11 @@ iframe.lazy{ width: 100%; height: 398px; }
       media.each(function(j, mediaElement){
         var next = function(event){
           var target = piece.find('.images p:eq(' + (j + 1) + ')');
-          window.scrollTo(0, target.offset().top - 200);
+          window.scrollTo(0, target.offset().top - 80);
         }
         var previous = function(event){
           var target = piece.find('.images p:eq(' + (j - 1) + ')');
-          window.scrollTo(0, target.offset().top - 200);
+          window.scrollTo(0, target.offset().top - 80);
         }
         var m = $(mediaElement);
         var controls = "<div class='photo-controls'>";
@@ -701,7 +709,8 @@ iframe.lazy{ width: 100%; height: 398px; }
         }
         controls += "</div>";
         m.find('.image-wrapper').append(controls);
-        m.find('.next').click(next)
+        m.find('img').click(next);
+        m.find('.next').click(next);
         m.find('.prev').click(previous);
       });
     });
