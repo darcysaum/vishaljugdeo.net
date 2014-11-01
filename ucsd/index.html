@@ -1,0 +1,537 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vishal Jugdeo</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <style>
+body{ margin: 0; }
+body, body * { font-family: "Helvetica Neue", Helvetica, sans-serif; text-align: left; }
+.container{ width: auto; margin: 0; padding: 0;}
+
+a{text-decoration: none; color: #3C4044; }
+p{margin: 8px 0; }
+h1{ font-size: 16px;}
+h2{ font-size: 119%; }
+h3{ font-size: 130%; }
+h4{ margin-top: 20px; font-size: 115%; }
+
+#navbarContainer{ top: -51px; transition: top .2s; }
+#navbarContainer.show{ top: 0; transition: top .2s; }
+.navbar .container{ padding-right: 0; padding-left: 15px; margin-right: 0; margin-left: auto; background: white; border-bottom: 1px solid #e0e3e6; }
+.navbar .nav li .dropdown-menu{ border-radius: 0; border: 0; box-shadow: none; }
+.navbar-nav>li.section-title { line-height: 20px; font-size: 15px; position: relative; display: block; padding: 10px 15px;}
+
+.navbar a:hover{ color: black;}
+.navbar .navbar-brand, .navbar li a { font-size: 15px; color: #223; }
+.navbar-brand{ margin-right: 65px; }
+
+#workDropdown, #workDropdown.active, #workDropdown:hover, #workDropdown ul{ background: #eeeee1; max-width: 470px; min-width: 470px;}
+#workDropdown li a{ background: #eeeee1; padding: 8px 15px; white-space: normal}
+#workDropdown li a:hover{ background: white; }
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus{ background: #eeeee1; color: #223; }
+a:hover{ color: #2a6496; text-decoration: none;}
+a:visited{ color: #57758F; }
+
+.header, .main, .footer{ padding: 50px 20px 70px 50px; }
+.navbar .container{ padding: 0 20px 0 50px; }
+.header{ padding-bottom: 300px; }
+.footer{padding-bottom: 600px;}
+
+.main{ background: #f0f3f6; color: #223; }
+.main a, .main a:visited{ text-decoration: none; }
+.section{ margin-top: 30px; }
+.nav h4{ margin: 8px 0; }
+.links a{ margin-right: 4px; display: block; }
+.section h3, .section h2{ margin-bottom: 15px; }
+.work{ padding-top: 100px; }
+.work h3, .work > p{max-width: 600px;}
+.menu .items{ display: inline-block; vertical-align: top; }
+.images p{ margin: 55px 0 55px 0; }
+.images img, .images iframe{ height: 500px; display: block; opacity: 1.0; transition: opacity 0.1s;}
+.images img.lazy{ opacity: 0; transition: opacity 0.5s; }
+.work .caption{ font-size: 90%; color: #5F6D6B; display: block; margin-top: 13px; clear: both; }
+.icon-bar{ background: #223; }
+.piece{ font-weight: bold;}
+
+.image-wrapper{ background: white; padding: 20px 20px 20px 20px; margin-left: -20px; display: inline-block; background: rgba(255,255,255,0); transition: background .5s;  }
+.image-wrapper .photo-controls{ opacity: 0; transition: opacity .5s; margin-top: 7px; text-align: center; }
+.image-wrapper .photo-controls a{ font-weight: bold; cursor: pointer;  }
+.image-wrapper .photo-controls a.prev{ float: left;  }
+.image-wrapper .photo-controls a.next{ float: right;  }
+.image-wrapper:hover .photo-controls{ opacity: 1; }
+
+.nav>li.menu-nodd{ visibility: hidden; display: none; }
+.nav .section-title{ font-weight: 600; }
+
+#press { margin: 150px 0 700px;  padding-top: 200px; }
+
+
+@media screen and (max-width: 1032px){
+#workDropdown, #workDropdown.active, #workDropdown:hover, #workDropdown ul{ max-width: 369px; min-width: 369px;}
+.images img, .images iframe{height: auto; width: 100%; }
+.images iframe{ width: 100%; height: 398px; }
+.image-wrapper{width: 100%;}
+}
+
+@media screen and (max-width: 768px) {
+.navbar-fixed-top .navbar-collapse,.navbar-collapse{ max-height: 2000px; overflow-y: scroll;}
+#workDropdown{ visibility: hidden; display: none;}
+.work-link{ background: #eeeee1; }
+.nav>li.menu-nodd{ visibility: visible; display: block; }
+#navbarContainer{ top: 0; }
+.header{ visibility: hidden; display: none; }
+body{ font-size: 125%; }
+.header, .footer, .main { padding: 0 4%; }
+.navbar .container{ padding: 0 4%;}
+.header{ padding-bottom: 80px; }
+.menu .items{ width: auto; }
+.images img{height: auto; width: auto; max-width: 100%;  }
+.images iframe{ width: 100%; height: 300px; }
+.links a{ margin-bottom: 6px; }
+.section{ margin-top: 0; }
+.work{ padding-top: 65px; }
+.images p{ margin: 8px 0 0 0; }
+.work .caption{ font-size: 70%; color: #5F7D9B; display: block; margin-top: 0; position: relative; }
+.image-wrapper,.image-wrapper:hover{ background: none; padding: 0; margin-left: 0; display: block; box-shadow: none; margin-bottom: 30px; }
+.image-wrapper .photo-controls{display: none;}
+#workDropdown, #workDropdown.active, #workDropdown:hover, #workDropdown ul{ max-width: 100%; min-width: 100%;}
+#press { padding-top: 65px; }
+}
+
+</style>
+</head>
+
+<body data-spy='scroll'>
+
+  <div id="navbarContainer" class="navbar navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">VISHAL JUGDEO</a>
+      </div>
+      <div class="collapse navbar-collapse" id="workMenu">
+        <ul class="nav navbar-nav">
+          <li><a data-toggle="collapse" data-target=".navbar-collapse" href="/cv.html">CV</a></li>
+          <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#press">Press</a></li>
+          <li class="menu-nodd work-link"><a data-toggle="collapse" data-target=".navbar-collapse" href="#a-shaky-picture-has-no-weight">A Shaky Picture Has No Weight (2013)</a></li>
+          <li class="menu-nodd work-link"><a data-toggle="collapse" data-target=".navbar-collapse" href="#stage-design-for-disassociation">Stage Design for Disassociation (2011)</a></li>
+          <li class="menu-nodd work-link"><a data-toggle="collapse" data-target=".navbar-collapse" href="#goods-carrier">Goods Carrier (2012)</a></li>
+          <li class="menu-nodd work-link"><a data-toggle="collapse" data-target=".navbar-collapse" href="#an-education-in-the-logic-of-leaves">An Education In the Logic of the Leaves (2014)</a></li>
+          <li class="menu-nodd work-link"><a data-toggle="collapse" data-target=".navbar-collapse" href="#square-configuration">Square Configuration (Decorum) Study (2009)</a></li>
+          <li class="menu-nodd work-link"><a data-toggle="collapse" data-target=".navbar-collapse" href="#violent-broadcast">Violent Broadcast (2010)</a></li>
+          <li class="menu-nodd work-link"><a data-toggle="collapse" data-target=".navbar-collapse" href="#jen">Jen (2001)</a></li>
+          <li class="dropdown" id="workDropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <span class="menu-button"><span class="piece"> </span></span>
+              &nbsp;<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#a-shaky-picture-has-no-weight">A Shaky Picture Has No Weight (2013)</a></li>
+              <li><a href="#stage-design-for-disassociation">Stage Design for Disassociation (2011)</a></li>
+              <li><a href="#goods-carrier">Goods Carrier (2012)</a></li>
+              <li><a href="#an-education-in-the-logic-of-leaves">An Education In the Logic of the Leaves (2014)</a></li>
+              <li><a href="#square-configuration">Square Configuration (Decorum) Study (2009)</a></li>
+              <li><a href="#violent-broadcast">Violent Broadcast (2010)</a></li>
+              <li><a href="#jen">Jen (2001)</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+      <div class="title">
+        <h1>VISHAL JUGDEO</h1>
+        <div class="section nav">
+          <p class="links">
+            <a href="cv.html">CV</a>
+            <a href="#press">Press</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="section menu">
+        <div class="items">
+          <h2>Work</h2>
+          <p class="links">
+            <a href="#a-shaky-picture-has-no-weight">A Shaky Picture Has No Weight (2013)</a>
+            <a href="#stage-design-for-disassociation">Stage Design for Disassociation (2011)</a>
+            <a href="#goods-carrier">Goods Carrier (2012)</a>
+            <a href="#an-education-in-the-logic-of-leaves">An Education In the Logic of the Leaves (2014)</a>
+            <a href="#square-configuration">Square Configuration (Decorum) Study (2009)</a>
+            <a href="#violent-broadcast">Violent Broadcast (2010)</a>
+            <a href="#jen">Jen (2001)</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="section nav">
+        <a href="mailto:vjugdeo@gmail.com">vjugdeo@gmail.com</a>
+      </div>
+
+    </div>
+
+    <div class="main">
+
+      <div id='a-shaky-picture-has-no-weight' class='section work'>
+        <h3>A Shaky Picture Has No Weight (2013)</h3>
+        <p>Live installation with HD video projection, performance and kinetic sculptural elements.  Total running time: 26 minutes.</p>
+        <p>Commissioned by Performa 13 and staged at Abrons Art Center, New York</p>
+        <p>Performers: Vishal Jugdeo and Billy Wright</p>
+        <p>Theater technicians: Kryssy Wright, Chimmy Gunn, Dan Cruz, Ben Demarest, McKenzie Angelo, Yolanda Royster</p>
+        <p>Production coordinator: Robert Hickerson</p>
+        <p>Abrons technical director: Jon Harper</p>
+        <p>Video: Camera: Conci Althouse and Vishal Jugdeo, Sound: Noah Liebelt and Vishal Jugdeo.</p>
+
+        <div class="images">
+          <p>
+            <img src="about:blank" class="lazy" data-src="/asset/img/500/a-shaky-picture-1.jpg"/>
+            <span class="caption">Photo by Paula Court</span>
+          </p>
+          <p>
+            <img src="about:blank" class="lazy" data-src="/asset/img/500/a-shaky-picture-2.jpg"/>
+            <span class="caption">Photo by Paula Court</span>
+          </p>
+          <p>
+            <img src="about:blank" class="lazy" data-src="/asset/img/500/a-shaky-picture-3.jpg"/>
+          </p>
+          <p>
+            <img src="about:blank" class="lazy" data-src="/asset/img/500/a-shaky-picture-4.jpg"/>
+          </p>
+          <p>
+            <img src="about:blank" class="lazy" data-src="/asset/img/500/a-shaky-picture-5.jpg"/>
+            <span class="caption">Photo by Paula Court</span>
+          </p>
+          <p>
+            <img src="about:blank" class="lazy" data-src="/asset/img/500/a-shaky-picture-6.jpg"/>
+            <span class="caption">Photo by Paula Court</span>
+          </p>
+          <p>
+            <img src="about:blank" class="lazy" data-src="/asset/img/500/a-shaky-picture-7.jpg"/>
+            <span class="caption">Photo by Paula Court</span>
+          </p>
+          <p>
+            <iframe class="lazy" id="video01" src="about:blank" data-src="http://player.vimeo.com/video/102005818?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="889" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+          </p>
+        </div>
+      </div>
+
+
+      <div id="stage-design-for-disassociation" class="section work">
+        <h3>Stage Design for Disassociation (2011)</h3>
+        <p>Mixed-media installation with HD video on flat-screen monitor and four-channel sound, dimensions variable.</p>
+        <p>TRT 13:00</p>
+        <p>Performers: Cynthia Bond and Patricia Scanlon</p>
+        <p>Camera: Danny Roew</p>
+        <div class="images">
+          <p><img src="about:blank" class="lazy" data-src="/asset/img/500/stage-design-for-disassociation-1.jpg"/></p>
+          <p><img src="about:blank" class="lazy" data-src="/asset/img/500/stage-design-for-disassociation-2.jpg"/></p>
+          <p><img src="about:blank" class="lazy" data-src="/asset/img/500/stage-design-for-disassociation-3.jpg"/></p>
+          <p><img src="about:blank" class="lazy" data-src="/asset/img/500/stage-design-for-disassociation-4.jpg"/></p>
+          <p>
+            <iframe class="lazy" id="video03" src="about:blank" data-src="http://player.vimeo.com/video/54417722?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="889" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+          </p>
+        </div>
+      </div>
+      
+
+      <div id="goods-carrier" class="section work">
+        <h3>Goods Carrier (2012)</h3>
+        <p>Mixed-media installation with HD video projection, sound, and sculptural elements with mechanized movement. Dimensions variable.</p>
+        <p>Total running time for video plus movement 21 minutes.</p>
+        <p>Performers:&nbsp;Namit Das, Neesha Jhaveri, Anahita Uberoi, Kavita Srinivasan and Billy Wright</p>
+        <p>Director of Photography:&nbsp;Keshav Prakash</p>
+        <p>Co-producer:&nbsp;Yasmine Stafford</p>
+        <h4>Installation view Hammer Museum, Los Angeles</h4>
+        <div class="images">
+          <p>
+            <img src="about:blank" class="lazy" data-src="/asset/img/500/goods-carrier-1.jpg"/>
+            <span class="caption">Photo by Brian Forrest</span>
+          </p>
+          <p>
+            <img src="about:blank" class="lazy" data-src="/asset/img/500/goods-carrier-2.jpg"/>
+            <span class="caption">Photo by Brian Forrest</span>
+          </p>
+          <p>
+            <img src="about:blank" class="lazy" data-src="/asset/img/500/goods-carrier-3.jpg"/>
+            <span class="caption">Photo by Brian Forrest</span>
+          </p>
+          <p>
+            <img src="about:blank" class="lazy" data-src="/asset/img/500/goods-carrier-6.jpg"/>
+          </p>
+          <p>
+            <img src="about:blank" class="lazy" data-src="/asset/img/500/goods-carrier-7.jpg"/>
+          </p>
+          <p>
+            <img src="about:blank" class="lazy" data-src="/asset/img/500/goods-carrier-8.jpg"/>
+          </p>
+          <p>
+            <iframe class="lazy" id="video01" src="about:blank" data-src="http://player.vimeo.com/video/50499467?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="889" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+          </p>
+          <p>
+            <iframe class="lazy" id="video02" src="about:blank" data-src="http://player.vimeo.com/video/54631909?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="889" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+          </p>
+
+        </div>
+      </div>
+
+      <div id="an-education-in-the-logic-of-leaves" class="section work">
+        <h3>An Education In the Logic of the Leaves (2014)</h3>
+        <p>Mixed-media installation with two HD videos, sound.  Total running time for all: 21 minutes</p>
+        <p>Performers: Vishal Jugdeo and Shyaam Kaara</p>
+        <p>Director of photography: Conci Althouse, Assistant Camera: Carole McClintock, Sound mix: Noah Liebelt</p>
+        <div class="images">
+          <p><img src="about:blank" class="lazy" data-src="/asset/img/500/an-education-1.jpg"/></p>
+          <p><img src="about:blank" class="lazy" data-src="/asset/img/500/an-education-2.jpg"/></p>
+          <p><img src="about:blank" class="lazy" data-src="/asset/img/500/an-education-3.jpg"/></p>
+          <p><img src="about:blank" class="lazy" data-src="/asset/img/500/an-education-4.jpg"/></p>
+          <p><img src="about:blank" class="lazy" data-src="/asset/img/500/an-education-5.jpg"/></p>
+          <p><img src="about:blank" class="lazy" data-src="/asset/img/500/an-education-6.jpg"/></p>
+          <p>
+            <iframe class="lazy" id="video05" src="about:blank" data-src="http://player.vimeo.com/video/102213998?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="889" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+          </p>
+
+        </div>
+      </div>
+
+      <div id="square-configuration" class="section work">
+        <h3>Square Configuration (Decorum) Study (2009)</h3>
+        <p>Mixed-media installation with high-definition video projection with sound, dimensions variable</p>
+        <p>TRT: 7:40</p>
+        <p>(May be exhibited as single-channel projection)</p>
+        <p>Performers: Cynthia Bond and Billy Wright</p>
+        <p>Camera, sound and lighting: AJ Wedding</p>
+        <div class="images">
+          <p><img src="about:blank" class="lazy" data-src="/asset/img/500/square-configuration-1.jpg"/></p>
+          <p><img src="about:blank" class="lazy" data-src="/asset/img/500/square-configuration-2.jpg"/></p>
+          <p><img src="about:blank" class="lazy" data-src="/asset/img/500/square-configuration-3.jpg"/></p>
+          <p>
+            <iframe class="lazy" id="video06" src="about:blank" data-src="http://player.vimeo.com/video/54425056?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="889" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+          </p>
+
+        </div>
+      </div>
+
+      <div id="violent-broadcast" class="section work">
+        <h3>Violent Broadcast (2010)</h3>
+        <p>Single-channel high-definition video projection onto custom screen with sound</p>
+        <p>TRT: 8:00</p>
+        <p>Performers: Cynthia Bond, Mark Damon Espinoza, and Billy Wright</p>
+        <p>Camera, sound and lighting: AJ Wedding</p>
+        <div class="images">
+          <p><img src="about:blank" class="lazy" data-src="/asset/img/500/violent-broadcast-1.jpg"/><span class="caption">Photo by Kelly Barrie</span></p>
+          <p><img src="about:blank" class="lazy" data-src="/asset/img/500/violent-broadcast-2.jpg"/></p>
+          <p><img src="about:blank" class="lazy" data-src="/asset/img/500/violent-broadcast-3.jpg"/></p>
+          <p><img src="about:blank" class="lazy" data-src="/asset/img/500/violent-broadcast-4.jpg"/></p>
+          <p><img src="about:blank" class="lazy" data-src="/asset/img/500/violent-broadcast-5.jpg"/></p>
+          <p>
+            <iframe class="lazy" id="video04" src="about:blank" data-src="http://player.vimeo.com/video/50639939?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="889" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+          </p>
+        </div>
+      </div>
+      
+      <div id="surplus-room" class="section work">
+        <h3>Surplus Room (2008)</h3>
+        <p>Mixed-media installation with high-definition projection and three-channel sound</p>
+        <p>Dimensions variable</p>
+        <p>TRT: 8:00 </p>
+        <p>Performers: Joe Reynolds and Billy Wright</p>
+        <p>Camera, sound and lighting: AJ Wedding</p>
+        <div class="images">
+          <p><img src="about:blank" class="lazy" data-src="/asset/img/500/surplus-room-1.jpg"/><span class="caption">Photo by Kelly Barrie</span></p>
+          <p><img src="about:blank" class="lazy" data-src="/asset/img/500/surplus-room-2.jpg"/><span class="caption">Photo by Kelly Barrie</span></p>
+          <p><img src="about:blank" class="lazy" data-src="/asset/img/500/surplus-room-3.jpg"/><span class="caption">Photo by Kelly Barrie</span></p>
+          <p><img src="about:blank" class="lazy" data-src="/asset/img/500/surplus-room-4.jpg"/></p>
+          <p><img src="about:blank" class="lazy" data-src="/asset/img/500/surplus-room-5.jpg"/></p>
+          <p>
+            <iframe class="lazy" id="video07" src="about:blank" data-src="http://player.vimeo.com/video/53827331?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="889" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+          </p>
+
+        </div>
+      </div>
+      
+      <div id="jen" class="section work">
+        <h3>Jen (2001)</h3>
+        <p>Three-channel video with sound. Total running time: 8:40.</p>
+        <p>Performer: Jennifer Yong</p>
+        <div class="images">
+          <p>
+            <iframe class="lazy" id="video07" src="about:blank" data-src="http://player.vimeo.com/video/53827331?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="889" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+  <div id="press">
+  <h2>Selected Press</h2>
+  <div class="section menu">
+    <div class="items">
+      <p class="links">
+        <a href="/asset/pdf/vishal-jugdeo-kate-green-art-forum.pdf">Kate Green in Artforum, February 2014</a>
+        <a href="/asset/pdf/vishal-jugdeo-bidoun-aram-moshayedi-essay.pdf">Aram Moshayedi essay in Bidoun, Summer 2012</a>
+        <a href="/asset/pdf/vishal-jugdeo-frieze-jonathan-griffin-review.pdf">Jonathan Griffin review in Frieze, September, 2012</a>
+        <a href="/asset/pdf/vishal-jugdeo-art21-interview.pdf">Lily Simonson interview in Art21 blog, July 26, 2012</a>
+        <a href="/asset/pdf/vishal-jugdeo-made-in-la-catalogue.pdf">Lauri Firstenberg catalogue essay for Made in LA 2012</a>
+        <a href="/asset/pdf/vishal-jugdeo-flash-art-with-elad-lassry.pdf">Elad Lassry interview in Flash Art, May/June 2011</a>
+        <a href="/asset/pdf/vishal-jugdeo-artreview-future-greats.pdf">Tyler Coburn, "Future Greats" in Art Review, March 2010</a>
+        <a href="/asset/pdf/vishal-jugdeo-california-biennale-catalog-2010.pdf">Chloe Flores interview in California Biennial 2010 catalogue</a>
+        <a href="/asset/pdf/vishal-jugdeo-zerodeux-celine-kopp-essay.pdf">Celine Kopp essay in Zero Deux, Spring 2010</a>
+        <a href="/asset/pdf/vishal-jugdeo-art-papers-with-aram-moshayedi.pdf">Aram Moshayedi interview in Art Papers, January 2008</a>
+      </p>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+
+  <script>
+  (function(){
+    if(document.documentElement.clientWidth <= 500){
+      var imgs = document.getElementsByTagName("img");
+      for(var i = 0; i < imgs.length; i++){
+        img = imgs[i];
+        var psl_src = img.getAttribute("pagespeed_lazy_src");
+        if(psl_src){
+          img.setAttribute("pagespeed_lazy_src", psl_src.replace("500", "300"));
+        }
+        imgs[i].src = imgs[i].src.replace("500", "300");
+      }
+    }
+
+  })();
+  </script>
+
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36705421-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script>
+
+  function elementInViewport(el) {
+    var top = el.offsetTop;
+    var left = el.offsetLeft;
+    var width = el.offsetWidth;
+    var height = el.offsetHeight;
+
+    while(el.offsetParent) {
+      el = el.offsetParent;
+      top += el.offsetTop;
+      left += el.offsetLeft;
+    }
+
+    return (
+      top < (window.pageYOffset + window.innerHeight + 500) &&
+      left < (window.pageXOffset + window.innerWidth) &&
+      (top + height + 500) > window.pageYOffset &&
+      (left + width) > window.pageXOffset
+    );
+  }
+  (function(){
+
+    var lazyLoadElements = document.querySelectorAll(".lazy");
+    var menu = $('#navbarContainer');
+
+    var initSpy = function(event){
+      var spy = $('body').scrollspy({'target': '#navbarContainer', 'offset': 100});
+      window.addEventListener('resize', function(event){
+        $('[data-spy="scroll"]').each(function() {
+          var $spy = $(this).scrollspy('refresh')
+        });
+      });
+      $('body').on('activate.bs.scrollspy', function () {
+        $('.menu-button .piece').text($('#workMenu .dropdown li.active a').text());
+      });
+    };
+
+    var lazyLoad = function(event){
+      for(var i = 0; i < lazyLoadElements.length; i++){
+        var el = lazyLoadElements[i];
+        el.addEventListener("load", function(event){
+          var tmp = event.target.className.replace('lazy', '');
+          event.target.className = tmp;
+        });
+        if(elementInViewport(el) && !el.vis){
+          el.vis = true;
+          el.setAttribute("src", el.getAttribute("data-src"));
+        }
+        if(window.pageYOffset > 600){
+          menu.addClass('show');
+        } else {
+          menu.removeClass('show');
+        }
+      }
+    };
+    window.addEventListener("load", lazyLoad);
+    window.addEventListener('load', initSpy);
+
+    window.addEventListener("scroll", lazyLoad);
+    window.addEventListener("resize", lazyLoad);
+  })();
+
+  (function(){
+    var pieces = $('.section.work');
+    pieces.each(function(i, element){
+      var piece = $(element);
+      var media = piece.find('.images p');
+      var wrapper = media.wrapInner("<div class='image-wrapper'></div>");
+      media.each(function(j, mediaElement){
+        var next = function(event){
+          var target = piece.find('.images p:eq(' + (j + 1) + ')');
+          window.scrollTo(0, target.offset().top - 80);
+        }
+        var previous = function(event){
+          var target = piece.find('.images p:eq(' + (j - 1) + ')');
+          window.scrollTo(0, target.offset().top - 80);
+        }
+        var m = $(mediaElement);
+        var controls = "<div class='photo-controls'>";
+        if(j > 0){
+          controls += "<a class='prev'>Previous</a> ";
+        }
+        controls += "<span class='img-index'>" + ((j + 1) + " of " + media.length) + "</span>";
+        if(j < (media.length - 1)){
+          controls += " <a class='next'>Next</a></div>";
+        }
+        controls += "</div>";
+        m.find('.image-wrapper').append(controls);
+        m.find('img').click(next);
+        m.find('.next').click(next);
+        m.find('.prev').click(previous);
+      });
+    });
+  })();
+
+  (function(){
+    var menu = $('#workMenu')
+    menu.find('li li a').click(function(){
+      menu.removeClass('in').addClass('collapse');
+    });
+  })();
+  </script>
+</body>
+</html>
