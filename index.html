@@ -49,7 +49,7 @@ a:visited{ color: #57758F; }
 .links a{ margin-right: 4px; display: block; }
 .section h3, .section h2{ margin-bottom: 15px; }
 .work{ padding-top: 100px; }
-.work h3, .work > p{max-width: 600px;}
+.work h3, .work > p, #bio p {max-width: 600px;}
 .menu .items{ display: inline-block; vertical-align: top; }
 .images p{ margin: 55px 0 55px 0; }
 .images img, .images iframe{ height: 500px; display: block; opacity: 1.0; transition: opacity 0.1s;}
@@ -68,7 +68,8 @@ a:visited{ color: #57758F; }
 .nav>li.menu-nodd{ visibility: hidden; display: none; }
 .nav .section-title{ font-weight: 600; }
 
-#press { margin: 150px 0 700px;  padding-top: 200px; }
+#press { margin: 100px 0 700px;  padding-top: 100px; }
+#bio { margin: 100px 0 300px;  padding-top: 100px; }
 
 
 @media screen and (max-width: 1032px){
@@ -121,8 +122,10 @@ body{ font-size: 125%; }
       </div>
       <div class="collapse navbar-collapse" id="workMenu">
         <ul class="nav navbar-nav">
+          <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#bio">Bio</a></li>
           <li><a data-toggle="collapse" data-target=".navbar-collapse" href="cv.html">CV</a></li>
           <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#press">Press</a></li>
+          <li class="menu-nodd work-link"><a data-toggle="collapse" data-target=".navbar-collapse" href="#vqueeram">VQUEERAM (2016 - ongoing)</a></li>
           <li class="menu-nodd work-link"><a data-toggle="collapse" data-target=".navbar-collapse" href="#a-shaky-picture-has-no-weight">A Shaky Picture Has No Weight (2013)</a></li>
           <li class="menu-nodd work-link"><a data-toggle="collapse" data-target=".navbar-collapse" href="#goods-carrier">Goods Carrier (2012)</a></li>
           <li class="menu-nodd work-link"><a data-toggle="collapse" data-target=".navbar-collapse" href="#stage-design-for-disassociation">Stage Design for Disassociation (2011)</a></li>
@@ -138,6 +141,7 @@ body{ font-size: 125%; }
               <span class="menu-button"><span class="piece"> </span></span>
               &nbsp;<b class="caret"></b></a>
             <ul class="dropdown-menu">
+              <li><a href="#vqueeram">VQUEERAM (2016 - ongoing)</a></li>
               <li><a href="#a-shaky-picture-has-no-weight">A Shaky Picture Has No Weight (2013)</a></li>
               <li><a href="#goods-carrier">Goods Carrier (2012)</a></li>
               <li><a href="#stage-design-for-disassociation">Stage Design for Disassociation (2011)</a></li>
@@ -160,17 +164,18 @@ body{ font-size: 125%; }
 			<div class="title">
 				<h1>VISHAL JUGDEO</h1>
 				<div class="section nav">
-					<p class="links">
-						<a href="cv.html">CV</a>
-						<a href="#press">Press</a>
+					<p>
+						<a href="#bio">Bio</a>&nbsp;&nbsp;
+						<a href="cv.html">CV</a>&nbsp;&nbsp;
+						<a href="#press">Press</a>&nbsp;&nbsp;
 					</p>
 				</div>
 			</div>
 
 			<div class="section menu">
 				<div class="items">
-					<h2>Work</h2>
 					<p class="links">
+            <a href="#vqueeram">VQUEERAM (2016 - ongoing)</a>
             <a href="#a-shaky-picture-has-no-weight">A Shaky Picture Has No Weight (2013)</a>
             <a href="#goods-carrier">Goods Carrier (2012)</a>
             <a href="#stage-design-for-disassociation">Stage Design for Disassociation (2011)</a>
@@ -192,6 +197,36 @@ body{ font-size: 125%; }
 		</div>
 
 		<div class="main">
+
+      <div id='vqueeram' class='section work'>
+        <h3>VQUEERAM (2016 - ongoing)</h3>
+        <p>This project is an ongoing collaboration with Vikram “Vqueeram” Aditya Sahai. It has been exhibited in sections, and continues to evolve as we work together. </p>
+        <p>Originally produced in collaboration with 18th Street Arts Center, Santa Monica, CA. </p>
+        <p>Camera: Vishal Jugdeo and Wency Mendes, Sound: Wency Mendes and Ganesh Dutt</p>
+
+
+
+				<div class="images">
+					<p>
+            <img src="about:blank" class="lazy" data-src="asset/img/500/vqueeram-01.jpg"/>
+					</p>
+					<p>
+            <img src="about:blank" class="lazy" data-src="asset/img/500/vqueeram-02.jpg"/>
+					</p>
+					<p>
+            <img src="about:blank" class="lazy" data-src="asset/img/500/vqueeram-03.jpg"/>
+					</p>
+					<p>
+            <iframe class="lazy" id="video01" src="about:blank" data-src="http://player.vimeo.com/video/237828641?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="889" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+					</p>
+					<p>
+            <iframe class="lazy" id="video01" src="about:blank" data-src="http://player.vimeo.com/video/258410644?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="889" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+					</p>
+					<p>
+            <iframe class="lazy" id="video01" src="about:blank" data-src="http://player.vimeo.com/video/258384686?byline=0&amp;badge=0&amp;portrait=0&amp;color=B0C3D6" width="889" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+					</p>
+				</div>
+      </div>
 
       <div id='a-shaky-picture-has-no-weight' class='section work'>
         <h3>A Shaky Picture Has No Weight (2013)</h3>
@@ -292,7 +327,7 @@ body{ font-size: 125%; }
 					</p>
 				</div>
 			</div>
-      
+
 
 			<div id="an-education-in-the-logic-of-leaves" class="section work">
 				<h3>An Education In the Logic of the Leaves (2014)</h3>
@@ -330,8 +365,8 @@ body{ font-size: 125%; }
 					</p>
 				</div>
 			</div>
-      
-      
+
+
 
 			<div id="square-configuration" class="section work">
 				<h3>Square Configuration (Decorum) Study (2009)</h3>
@@ -371,14 +406,14 @@ body{ font-size: 125%; }
 				</div>
 			</div>
 
-      
-      
+
+
       <div id='the-thing-that-precedes-you' class='section work'>
         <h3>The Thing That Precedes The You (2013)</h3>
         <p>Mixed-media installation with kinetic elements, HD video on monitor, sound on headphones and additional soundtrack within installation. Dimensions variable. Total running time: 12:51</p>
         <p>Performers: Shyaam Karra and Michael Karan Tomsu</p>
         <p>Director of photography: Michelle Lawler, Sound: Adam Douglass, Assistant Camera: Carole McClintock.  Production coordination: Eric Sick</p>
-        
+
         <div class="images">
 					<p>
             <img src="about:blank" class="lazy" data-src="asset/img/500/the-thing-that-precedes-the-you-1.jpg"/>
@@ -566,11 +601,38 @@ body{ font-size: 125%; }
 	</div>
 
 	<div class="footer">
+	<div id="bio">
+	<h2>Bio</h2>
+	<p>
+     Vishal Jugdeo is an interdisciplinary artist who works with video, installation, performance and
+     sculpture to construct experimental approaches to narrative. Weaving together strategies from
+     television, documentary and narrative cinema, and theater, he emphasizes the physical and psychical
+     space around moving images, revealing the mediated process through which we interpret and
+     understand the unfolding present. He has exhibited widely including solo exhibitions at the ICA
+     Philadelphia, LAXART, Los Angeles, Western Front, Vancouver and 18th Street Arts Center, Santa
+     Monica. Major commissioned works have been featured in Performa, New York, Made in LA at the
+     Hammer Museum Los Angeles and the California Biennial at the Orange County Museum of Art.
+  </p>
+  <p>
+    Notable group exhibitions include Witte De With Center for Contemporary Arts, Rotterdam, Armory
+    Center for the Arts, Pasadena, INOVA, Milwaukee and Vox Populi, Philadelphia.
+  </p>
+  <p>
+    Jugdeo completed an MFA at UCLA and a BFA at Simon Fraser University. He was a 2015 Guggenheim Foundation Fellow, and has received grants from Art Matters, Artadia, The Foundation for Contemporary Arts, California Community Foundation, and the Canada Council for the Arts, as well as residencies at Skowhegan, BOFFO and the MacDowell Colony.
+  </p>
+  <p>
+    Jugdeo is Assistant Professor in New Genres at the UCLA Department of Art.
+  </p>
+  </div>
+	</div>
+
+	<div class="footer">
 	<div id="press">
 	<h2>Selected Press</h2>
 	<div class="section menu">
 		<div class="items">
 			<p class="links">
+				<a href="/asset/pdf/vishal-jugdeo-isabelle-pauwels-blackflash.pdf">Isabelle Pauwels in BlackFlash, Winter 2016</a>
 				<a href="/asset/pdf/vishal-jugdeo-kate-green-art-forum.pdf">Kate Green in Artforum, February 2014</a>
 				<a href="/asset/pdf/vishal-jugdeo-bidoun-aram-moshayedi-essay.pdf">Aram Moshayedi essay in Bidoun, Summer 2012</a>
 				<a href="/asset/pdf/vishal-jugdeo-frieze-jonathan-griffin-review.pdf">Jonathan Griffin review in Frieze, September, 2012</a>
